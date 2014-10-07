@@ -1,0 +1,14 @@
+<form class="employee-form">
+    <legend><%= employee?'Update ':'Create '%>Employee</legend>
+    <div class="row"><label>First Name</label>
+        <input type="text" style="margin-left: 30px;" name="firstname" value="<%= employee? employee.get('firstname'):''%>"/></div>
+    <div class="row"><label>Last Name</label>
+    <input type="text" style="margin-left: 30px;"  name="lastname"value="<%= employee? employee.get('lastname'):''%>"/></div>
+    <div class="row"><label>Age</label>
+    <input type="text" style="margin-left: 75px;" name="age"value="<%= employee? employee.get('age'):''%>"/></div>
+    <div class="row"><button type="submit" class="btn btnmargin"><%= employee?'Update':'Create' %></button>
+    <% if(employee){%>
+       <input type="hidden" name="id" value="<%=employee.id%>"/>
+        <button type="button" class="btn btn-danger delete">Delete</button></div>
+     <% }; %>
+</form>

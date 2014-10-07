@@ -1,0 +1,21 @@
+{
+  "name": "EmployeeApplication",
+  "version": "0.0.0",
+  "description": "assignment application",
+  "main": "app.js",
+  "scripts": {
+    "test": "empapp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shraddhajog/employee_directory"
+  },
+  "author": "shraddha",
+  "bugs": {
+    "url": "https://github.com/shraddhajog/employee_directory/issues"
+  },
+  "homepage": "https://github.com/shraddhajog/employee_directory",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}

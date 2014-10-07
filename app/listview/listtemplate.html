@@ -1,0 +1,18 @@
+<a href="#new" class="btn btn-primary">New Employee</a>
+<table class="table striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <%_.each(employees,function(employee){ %>
+        <tr>
+            <td><%=employee.get('firstname')%></td>
+            <td><%=employee.get('lastname')%></td>
+            <td><%=employee.get('age')%></td>
+            <td><a href="#/edit/<%=employee.id%>" class="btn">Edit</a></td>
+        </tr>
+    <% });%>
+</table>
